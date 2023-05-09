@@ -1,6 +1,10 @@
-doctype html
-html
-  head
-    title= pageTitle
-  body
-    h1 Hello World!
+extends base.pug
+
+block content
+  header
+    include header.pug
+  main
+    include section1.pug
+    include section2.pug
+  footer
+    include footer.pug
